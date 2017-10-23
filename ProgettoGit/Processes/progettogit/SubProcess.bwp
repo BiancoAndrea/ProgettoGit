@@ -462,6 +462,11 @@
                 </sequence>
             </complexType>
         </schema>
+        <wsdl:definitions
+            targetNamespace="http://xmlns.example.com/20171019175806"
+            xmlns:tns="http://xmlns.example.com/20171019175806"
+            xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop"
+            xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
     </tibex:Types>
     <tibex:ProcessInfo callable="true" createdBy="Fabrizio"
         createdOn="Thu Oct 19 17:58:06 CEST 2017" description=""
@@ -717,6 +722,9 @@
             name="ReadFile-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:ReadActivityOutputTextClass"
             name="ReadFile" sca-bpel:internal="true"/>
+        <bpws:variable name="jdbcProperty" sca-bpel:hotUpdate="false"
+            sca-bpel:privateProperty="true" sca-bpel:property="yes"
+            sca-bpel:sharedResourceType="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" type="xsd:string"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
